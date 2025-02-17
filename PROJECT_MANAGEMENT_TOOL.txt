@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Project Management Tool</h1>
+        </header>
+
+        <div class="task-form">
+            <h2>Create New Task</h2>
+            <input type="text" id="task-name" placeholder="Task Name" required>
+            <input type="date" id="task-deadline" required>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="task-list">
+            <h2>Task List</h2>
+            <ul id="task-ul">
+                <!-- Tasks will be displayed here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
